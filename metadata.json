@@ -1,0 +1,8 @@
+{
+  "name": "LingoLens Magic Textbook",
+  "description": "A fun, animated language learning app for kids that transforms textbook photos into spoken words and magical animations using Gemini AI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
