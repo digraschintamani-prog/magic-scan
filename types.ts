@@ -4,19 +4,15 @@ export interface LessonContent {
   translatedText: string;
   pronunciation: string;
   funFact: string;
-  animationPrompt: {
-    emoji: string;
-    action: 'bounce' | 'spin' | 'wiggle' | 'pulse';
-    color: string;
-    description: string;
-  };
+  videoPrompt: string; // Detailed prompt for Veo video generation
 }
 
 export enum AppState {
   HOME,
   CAMERA,
-  PROCESSING,
+  PROCESSING, // OCR/Translation phase
+  GENERATING_VIDEO, // Veo generation phase
   RESULT
 }
 
-export type TargetLanguage = 'Spanish' | 'French' | 'German' | 'Japanese' | 'Chinese' | 'Hindi';
+export type TargetLanguage = 'Spanish' | 'French' | 'German' | 'Japanese' | 'Chinese' | 'Hindi' | 'American English' | 'British English';
